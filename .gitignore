@@ -1,8 +1,10 @@
 __pycache__/
 *.py[cod]
-outputs/sft/
-outputs/dpo_hh/
-outputs/dpo_ultrafeedback/
-outputs/persona_lora/
-__pycache__/
 .ipynb_checkpoints/
+outputs/sft/best/
+outputs/sft/final/
+outputs/dpo_hh/best/
+outputs/dpo_hh/final/
+outputs/dpo_ultrafeedback/best/
+outputs/dpo_ultrafeedback/final/
+outputs/persona_lora/final/
