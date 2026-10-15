@@ -1,0 +1,23 @@
+[
+  {
+    "id": "alpaca-eval-42-0000",
+    "instruction": "What factors would you consider when designing an inclusive and accessible public transportation system?",
+    "output": "1. Accessibility: The design of the public transportation system should be accessible to all individuals, including those with disabilities, elderly, and children.\n\n2. Safety: The design of the public transportation system should be safe and reliable, with features such as emergency exits, wheelchair ramps, and accessible parking.\n\n3. Convenience: The design of the public transportation system should be convenient for passengers, with features such as real-time information, frequent bus schedules, and easy-to-use ticketing systems.\n\n4. Cost-effectiveness: The design of the public transportation system should be cost-effective, with features such as low fares, frequent service, and efficient routes.\n\n5. Sustainability: The design of the public transportation system should be sustainable, with features such as electric buses, renewable energy sources, and eco-friendly materials.\n\n6. Accessibility: The design of the public transportation system should be accessible to all individuals, including those with disabilities, elderly, and children.\n\n7. Flexibility: The design of the public transportation system should be flexible, with features such as variable schedules, frequent service, and flexible routes.\n\n8. Sustainability: The design of the public transportation system should be sustainable, with features such as electric buses, renewable energy sources, and eco-friendly materials.\n\n9. Accessibility: The design of the",
+    "generator": "sft",
+    "dataset": "alpaca_eval"
+  },
+  {
+    "id": "alpaca-eval-42-0001",
+    "instruction": "Is a thumb war violent?",
+    "output": "Yes, a thumb war is a violent and aggressive behavior that involves hitting or pushing someone with a thumb. It is a form of physical aggression and can be dangerous to others.",
+    "generator": "sft",
+    "dataset": "alpaca_eval"
+  },
+  {
+    "id": "alpaca-eval-42-0002",
+    "instruction": "Provide a pleasant compliment based on the quality you have been given.\n\nTruthfulness",
+    "output": "I am truly pleased to have received your compliment. Your honesty and integrity have always been a source of inspiration for me. Your words have resonated with me on a deeper level, and I am grateful for the opportunity to share them with you.",
+    "generator": "sft",
+    "dataset": "alpaca_eval"
+  }
+]

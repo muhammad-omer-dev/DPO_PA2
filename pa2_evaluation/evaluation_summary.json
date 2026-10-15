@@ -1,0 +1,35 @@
+{
+  "ultrafeedback": {
+    "track": "ultrafeedback",
+    "sample_count": 300,
+    "wins": 111,
+    "losses": 128,
+    "ties": 61,
+    "unknown": 0,
+    "failures": 0,
+    "win_rate_without_ties": 0.46443514644351463,
+    "win_rate_tie_half": 0.4716666666666667
+  },
+  "hh": {
+    "track": "hh",
+    "sample_count": 300,
+    "wins": 147,
+    "losses": 88,
+    "ties": 65,
+    "unknown": 0,
+    "failures": 0,
+    "win_rate_without_ties": 0.625531914893617,
+    "win_rate_tie_half": 0.5983333333333334
+  },
+  "persona": {
+    "track": "persona",
+    "sample_count": 8,
+    "wins": 3,
+    "losses": 3,
+    "ties": 2,
+    "unknown": 0,
+    "failures": 0,
+    "win_rate_without_ties": 0.5,
+    "win_rate_tie_half": 0.5
+  }
+}

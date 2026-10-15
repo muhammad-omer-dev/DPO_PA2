@@ -1,0 +1,193 @@
+[{"stream_name":"stdout","time":1.172200827,"data":"{\"status\":\"BOUND\",\"bound_ip\":\"34.38.87.253\",\"bound_time\":\"2026-10-14T06:18:03Z\",\"effective_expire_time\":\"2026-10-14T18:18:03Z\"}\n"}
+,{"stream_name":"stdout","time":10.385530584,"data":"Output directory: /kaggle/working/pa2_evaluation\n"}
+,{"stream_name":"stdout","time":10.56485035,"data":"ultrafeedback_dpo_vs_sft_pairs.jsonl -\u003e /kaggle/input/notebooks/muhammadomer1/generation/pa2_generation/ultrafeedback_dpo_vs_sft_pairs.jsonl\n"}
+,{"stream_name":"stdout","time":10.564892689,"data":"hh_dpo_vs_sft_pairs.jsonl -\u003e /kaggle/input/notebooks/muhammadomer1/generation/pa2_generation/hh_dpo_vs_sft_pairs.jsonl\n"}
+,{"stream_name":"stdout","time":10.564899872,"data":"persona_lora_vs_base_pairs.jsonl -\u003e /kaggle/input/notebooks/muhammadomer1/generation/pa2_generation/persona_lora_vs_base_pairs.jsonl\n"}
+,{"stream_name":"stdout","time":10.921915755,"data":"\n"}
+,{"stream_name":"stdout","time":10.921955941,"data":"Track: ultrafeedback\n"}
+,{"stream_name":"stdout","time":10.921959676,"data":"Total pairs: 300\n"}
+,{"stream_name":"stdout","time":10.921962242,"data":"Already judged: 0\n"}
+,{"stream_name":"stdout","time":10.921964687,"data":"Remaining: 300\n"}
+,{"stream_name":"stdout","time":10.921967219,"data":"Batch 1 attempt 1\n"}
+,{"stream_name":"stdout","time":28.068506056,"data":"Batch 2 attempt 1\n"}
+,{"stream_name":"stdout","time":45.59760168,"data":"Batch 3 attempt 1\n"}
+,{"stream_name":"stdout","time":61.485954124,"data":"Batch 4 attempt 1\n"}
+,{"stream_name":"stdout","time":78.386937031,"data":"Batch 5 attempt 1\n"}
+,{"stream_name":"stdout","time":94.06108932,"data":"Batch 6 attempt 1\n"}
+,{"stream_name":"stdout","time":110.209930907,"data":"Batch 7 attempt 1\n"}
+,{"stream_name":"stdout","time":125.921996168,"data":"Batch 8 attempt 1\n"}
+,{"stream_name":"stdout","time":139.995165504,"data":"Batch 9 attempt 1\n"}
+,{"stream_name":"stdout","time":157.137689359,"data":"Batch 10 attempt 1\n"}
+,{"stream_name":"stdout","time":171.015915285,"data":"Batch 11 attempt 1\n"}
+,{"stream_name":"stdout","time":190.943238407,"data":"Batch 12 attempt 1\n"}
+,{"stream_name":"stdout","time":210.323622591,"data":"Batch 13 attempt 1\n"}
+,{"stream_name":"stdout","time":226.336583051,"data":"Batch 14 attempt 1\n"}
+,{"stream_name":"stdout","time":242.697019784,"data":"Batch 15 attempt 1\n"}
+,{"stream_name":"stdout","time":262.220361092,"data":"Batch 16 attempt 1\n"}
+,{"stream_name":"stdout","time":277.404009375,"data":"Batch 17 attempt 1\n"}
+,{"stream_name":"stdout","time":290.766121331,"data":"Batch 18 attempt 1\n"}
+,{"stream_name":"stdout","time":305.009686479,"data":"Batch 19 attempt 1\n"}
+,{"stream_name":"stdout","time":321.354073924,"data":"Batch 20 attempt 1\n"}
+,{"stream_name":"stdout","time":336.927877149,"data":"Batch 21 attempt 1\n"}
+,{"stream_name":"stdout","time":356.027191581,"data":"Batch 22 attempt 1\n"}
+,{"stream_name":"stdout","time":369.01785417,"data":"Batch 23 attempt 1\n"}
+,{"stream_name":"stdout","time":383.73347708,"data":"Batch 24 attempt 1\n"}
+,{"stream_name":"stdout","time":399.429351562,"data":"Batch 25 attempt 1\n"}
+,{"stream_name":"stdout","time":411.732867795,"data":"Batch 26 attempt 1\n"}
+,{"stream_name":"stdout","time":426.666927185,"data":"Batch 27 attempt 1\n"}
+,{"stream_name":"stdout","time":442.669981982,"data":"Batch 28 attempt 1\n"}
+,{"stream_name":"stdout","time":461.935140995,"data":"Batch 29 attempt 1\n"}
+,{"stream_name":"stdout","time":477.064131233,"data":"Batch 30 attempt 1\n"}
+,{"stream_name":"stdout","time":492.678334072,"data":"Batch 31 attempt 1\n"}
+,{"stream_name":"stdout","time":507.943619233,"data":"Batch 32 attempt 1\n"}
+,{"stream_name":"stdout","time":528.972035468,"data":"Batch 33 attempt 1\n"}
+,{"stream_name":"stdout","time":543.654171452,"data":"Batch 34 attempt 1\n"}
+,{"stream_name":"stdout","time":556.961020607,"data":"Batch 35 attempt 1\n"}
+,{"stream_name":"stdout","time":576.213179877,"data":"Batch 36 attempt 1\n"}
+,{"stream_name":"stdout","time":596.894706332,"data":"Batch 37 attempt 1\n"}
+,{"stream_name":"stdout","time":613.594266647,"data":"Batch 38 attempt 1\n"}
+,{"stream_name":"stdout","time":628.302115879,"data":"Batch 39 attempt 1\n"}
+,{"stream_name":"stdout","time":645.408924779,"data":"Batch 40 attempt 1\n"}
+,{"stream_name":"stdout","time":660.194806818,"data":"Batch 41 attempt 1\n"}
+,{"stream_name":"stdout","time":667.410072865,"data":"Attempt failed: Judge did not return ID alpaca-eval-42-0204\n"}
+,{"stream_name":"stdout","time":672.406099025,"data":"Batch 41 attempt 2\n"}
+,{"stream_name":"stdout","time":687.548415236,"data":"Batch 42 attempt 1\n"}
+,{"stream_name":"stdout","time":702.521124782,"data":"Batch 43 attempt 1\n"}
+,{"stream_name":"stdout","time":720.06141496,"data":"Batch 44 attempt 1\n"}
+,{"stream_name":"stdout","time":738.029550614,"data":"Batch 45 attempt 1\n"}
+,{"stream_name":"stdout","time":753.109609019,"data":"Batch 46 attempt 1\n"}
+,{"stream_name":"stdout","time":770.57478558,"data":"Batch 47 attempt 1\n"}
+,{"stream_name":"stdout","time":785.034949654,"data":"Batch 48 attempt 1\n"}
+,{"stream_name":"stdout","time":801.066353969,"data":"Batch 49 attempt 1\n"}
+,{"stream_name":"stdout","time":817.089434038,"data":"Batch 50 attempt 1\n"}
+,{"stream_name":"stdout","time":829.967776732,"data":"Batch 51 attempt 1\n"}
+,{"stream_name":"stdout","time":846.338870259,"data":"Batch 52 attempt 1\n"}
+,{"stream_name":"stdout","time":866.461666124,"data":"Batch 53 attempt 1\n"}
+,{"stream_name":"stdout","time":880.768822022,"data":"Batch 54 attempt 1\n"}
+,{"stream_name":"stdout","time":898.76864246,"data":"Batch 55 attempt 1\n"}
+,{"stream_name":"stdout","time":913.2245996,"data":"Batch 56 attempt 1\n"}
+,{"stream_name":"stdout","time":927.667808676,"data":"Batch 57 attempt 1\n"}
+,{"stream_name":"stdout","time":944.435053637,"data":"Batch 58 attempt 1\n"}
+,{"stream_name":"stdout","time":960.977419668,"data":"Batch 59 attempt 1\n"}
+,{"stream_name":"stdout","time":977.514759478,"data":"Batch 60 attempt 1\n"}
+,{"stream_name":"stdout","time":992.837121882,"data":"Finished: ultrafeedback\n"}
+,{"stream_name":"stdout","time":992.837187109,"data":"\n"}
+,{"stream_name":"stdout","time":992.837193999,"data":"Track: hh\n"}
+,{"stream_name":"stdout","time":992.837199284,"data":"Total pairs: 300\n"}
+,{"stream_name":"stdout","time":992.837204465,"data":"Already judged: 0\n"}
+,{"stream_name":"stdout","time":992.837208651,"data":"Remaining: 300\n"}
+,{"stream_name":"stdout","time":992.837212837,"data":"Batch 1 attempt 1\n"}
+,{"stream_name":"stdout","time":1006.447288411,"data":"Batch 2 attempt 1\n"}
+,{"stream_name":"stdout","time":1019.637596371,"data":"Batch 3 attempt 1\n"}
+,{"stream_name":"stdout","time":1042.10548048,"data":"Batch 4 attempt 1\n"}
+,{"stream_name":"stdout","time":1057.758840046,"data":"Batch 5 attempt 1\n"}
+,{"stream_name":"stdout","time":1072.51983112,"data":"Batch 6 attempt 1\n"}
+,{"stream_name":"stdout","time":1085.963865568,"data":"Batch 7 attempt 1\n"}
+,{"stream_name":"stdout","time":1101.202945944,"data":"Batch 8 attempt 1\n"}
+,{"stream_name":"stdout","time":1115.315169745,"data":"Batch 9 attempt 1\n"}
+,{"stream_name":"stdout","time":1134.664445887,"data":"Batch 10 attempt 1\n"}
+,{"stream_name":"stdout","time":1151.276268492,"data":"Batch 11 attempt 1\n"}
+,{"stream_name":"stdout","time":1165.890551912,"data":"Batch 12 attempt 1\n"}
+,{"stream_name":"stdout","time":1181.726977395,"data":"Batch 13 attempt 1\n"}
+,{"stream_name":"stdout","time":1198.130530374,"data":"Batch 14 attempt 1\n"}
+,{"stream_name":"stdout","time":1213.661741306,"data":"Batch 15 attempt 1\n"}
+,{"stream_name":"stdout","time":1230.666720693,"data":"Batch 16 attempt 1\n"}
+,{"stream_name":"stdout","time":1245.152152839,"data":"Batch 17 attempt 1\n"}
+,{"stream_name":"stdout","time":1259.243218406,"data":"Batch 18 attempt 1\n"}
+,{"stream_name":"stdout","time":1276.921273347,"data":"Batch 19 attempt 1\n"}
+,{"stream_name":"stdout","time":1291.320177398,"data":"Batch 20 attempt 1\n"}
+,{"stream_name":"stdout","time":1307.603291974,"data":"Batch 21 attempt 1\n"}
+,{"stream_name":"stdout","time":1321.91436526,"data":"Batch 22 attempt 1\n"}
+,{"stream_name":"stdout","time":1337.139605937,"data":"Batch 23 attempt 1\n"}
+,{"stream_name":"stdout","time":1353.216161413,"data":"Batch 24 attempt 1\n"}
+,{"stream_name":"stdout","time":1369.415837057,"data":"Batch 25 attempt 1\n"}
+,{"stream_name":"stdout","time":1406.940463075,"data":"Batch 26 attempt 1\n"}
+,{"stream_name":"stdout","time":1421.242903649,"data":"Batch 27 attempt 1\n"}
+,{"stream_name":"stdout","time":1435.649952489,"data":"Batch 28 attempt 1\n"}
+,{"stream_name":"stdout","time":1449.25662732,"data":"Batch 29 attempt 1\n"}
+,{"stream_name":"stdout","time":1467.244864581,"data":"Batch 30 attempt 1\n"}
+,{"stream_name":"stdout","time":1482.672149513,"data":"Batch 31 attempt 1\n"}
+,{"stream_name":"stdout","time":1503.805557267,"data":"Batch 32 attempt 1\n"}
+,{"stream_name":"stdout","time":1517.287012389,"data":"Batch 33 attempt 1\n"}
+,{"stream_name":"stdout","time":1533.675142978,"data":"Batch 34 attempt 1\n"}
+,{"stream_name":"stdout","time":1549.008487844,"data":"Batch 35 attempt 1\n"}
+,{"stream_name":"stdout","time":1561.74419311,"data":"Batch 36 attempt 1\n"}
+,{"stream_name":"stdout","time":1581.004708883,"data":"Batch 37 attempt 1\n"}
+,{"stream_name":"stdout","time":1598.605815732,"data":"Batch 38 attempt 1\n"}
+,{"stream_name":"stdout","time":1615.827682801,"data":"Batch 39 attempt 1\n"}
+,{"stream_name":"stdout","time":1627.786011972,"data":"Batch 40 attempt 1\n"}
+,{"stream_name":"stdout","time":1644.462793298,"data":"Batch 41 attempt 1\n"}
+,{"stream_name":"stdout","time":1659.312695333,"data":"Batch 42 attempt 1\n"}
+,{"stream_name":"stdout","time":1673.211003506,"data":"Batch 43 attempt 1\n"}
+,{"stream_name":"stdout","time":1687.499561856,"data":"Batch 44 attempt 1\n"}
+,{"stream_name":"stdout","time":1702.125543769,"data":"Batch 45 attempt 1\n"}
+,{"stream_name":"stdout","time":1721.9283265,"data":"Batch 46 attempt 1\n"}
+,{"stream_name":"stdout","time":1738.646057553,"data":"Batch 47 attempt 1\n"}
+,{"stream_name":"stdout","time":1751.826772587,"data":"Batch 48 attempt 1\n"}
+,{"stream_name":"stdout","time":1770.133106997,"data":"Batch 49 attempt 1\n"}
+,{"stream_name":"stdout","time":1785.690751184,"data":"Batch 50 attempt 1\n"}
+,{"stream_name":"stdout","time":1799.289453569,"data":"Batch 51 attempt 1\n"}
+,{"stream_name":"stdout","time":1813.833764087,"data":"Batch 52 attempt 1\n"}
+,{"stream_name":"stdout","time":1827.759512461,"data":"Batch 53 attempt 1\n"}
+,{"stream_name":"stdout","time":1847.374878257,"data":"Batch 54 attempt 1\n"}
+,{"stream_name":"stdout","time":1859.524964339,"data":"Batch 55 attempt 1\n"}
+,{"stream_name":"stdout","time":1872.080685151,"data":"Batch 56 attempt 1\n"}
+,{"stream_name":"stdout","time":1891.927001581,"data":"Batch 57 attempt 1\n"}
+,{"stream_name":"stdout","time":1909.092593023,"data":"Batch 58 attempt 1\n"}
+,{"stream_name":"stdout","time":1925.550385963,"data":"Batch 59 attempt 1\n"}
+,{"stream_name":"stdout","time":1940.042486644,"data":"Batch 60 attempt 1\n"}
+,{"stream_name":"stdout","time":1957.475657145,"data":"Finished: hh\n"}
+,{"stream_name":"stdout","time":1957.475693633,"data":"\n"}
+,{"stream_name":"stdout","time":1957.475699734,"data":"Track: persona\n"}
+,{"stream_name":"stdout","time":1957.475704467,"data":"Total pairs: 8\n"}
+,{"stream_name":"stdout","time":1957.475708963,"data":"Already judged: 0\n"}
+,{"stream_name":"stdout","time":1957.475713702,"data":"Remaining: 8\n"}
+,{"stream_name":"stdout","time":1957.475718281,"data":"Batch 1 attempt 1\n"}
+,{"stream_name":"stdout","time":1970.366513366,"data":"Batch 2 attempt 1\n"}
+,{"stream_name":"stdout","time":1981.699596702,"data":"Finished: persona\n"}
+,{"stream_name":"stdout","time":1981.699640225,"data":"{\n"}
+,{"stream_name":"stdout","time":1981.699647393,"data":"  \"ultrafeedback\": {\n"}
+,{"stream_name":"stdout","time":1981.699652445,"data":"    \"track\": \"ultrafeedback\",\n"}
+,{"stream_name":"stdout","time":1981.699657465,"data":"    \"sample_count\": 300,\n"}
+,{"stream_name":"stdout","time":1981.699662463,"data":"    \"wins\": 111,\n"}
+,{"stream_name":"stdout","time":1981.699667419,"data":"    \"losses\": 128,\n"}
+,{"stream_name":"stdout","time":1981.69967259,"data":"    \"ties\": 61,\n"}
+,{"stream_name":"stdout","time":1981.699677582,"data":"    \"unknown\": 0,\n"}
+,{"stream_name":"stdout","time":1981.699682606,"data":"    \"failures\": 0,\n"}
+,{"stream_name":"stdout","time":1981.699687806,"data":"    \"win_rate_without_ties\": 0.46443514644351463,\n"}
+,{"stream_name":"stdout","time":1981.699693518,"data":"    \"win_rate_tie_half\": 0.4716666666666667\n"}
+,{"stream_name":"stdout","time":1981.699698521,"data":"  },\n"}
+,{"stream_name":"stdout","time":1981.699703349,"data":"  \"hh\": {\n"}
+,{"stream_name":"stdout","time":1981.699708983,"data":"    \"track\": \"hh\",\n"}
+,{"stream_name":"stdout","time":1981.699714358,"data":"    \"sample_count\": 300,\n"}
+,{"stream_name":"stdout","time":1981.699718713,"data":"    \"wins\": 147,\n"}
+,{"stream_name":"stdout","time":1981.699723399,"data":"    \"losses\": 88,\n"}
+,{"stream_name":"stdout","time":1981.699727876,"data":"    \"ties\": 65,\n"}
+,{"stream_name":"stdout","time":1981.699732231,"data":"    \"unknown\": 0,\n"}
+,{"stream_name":"stdout","time":1981.699737008,"data":"    \"failures\": 0,\n"}
+,{"stream_name":"stdout","time":1981.699741635,"data":"    \"win_rate_without_ties\": 0.625531914893617,\n"}
+,{"stream_name":"stdout","time":1981.69974593,"data":"    \"win_rate_tie_half\": 0.5983333333333334\n"}
+,{"stream_name":"stdout","time":1981.699750565,"data":"  },\n"}
+,{"stream_name":"stdout","time":1981.699754975,"data":"  \"persona\": {\n"}
+,{"stream_name":"stdout","time":1981.699760191,"data":"    \"track\": \"persona\",\n"}
+,{"stream_name":"stdout","time":1981.699765096,"data":"    \"sample_count\": 8,\n"}
+,{"stream_name":"stdout","time":1981.699770024,"data":"    \"wins\": 3,\n"}
+,{"stream_name":"stdout","time":1981.699774777,"data":"    \"losses\": 3,\n"}
+,{"stream_name":"stdout","time":1981.699779618,"data":"    \"ties\": 2,\n"}
+,{"stream_name":"stdout","time":1981.69978402,"data":"    \"unknown\": 0,\n"}
+,{"stream_name":"stdout","time":1981.69978837,"data":"    \"failures\": 0,\n"}
+,{"stream_name":"stdout","time":1981.699793238,"data":"    \"win_rate_without_ties\": 0.5,\n"}
+,{"stream_name":"stdout","time":1981.699813297,"data":"    \"win_rate_tie_half\": 0.5\n"}
+,{"stream_name":"stdout","time":1981.69981769,"data":"  }\n"}
+,{"stream_name":"stdout","time":1981.69982139,"data":"}\n"}
+,{"stream_name":"stderr","time":2021.883475239,"data":"/benchmarks/.venv/lib/python3.12/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":2021.883527885,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":2021.911798986,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2022.502137049,"data":"[NbConvertApp] Writing 13601736 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2025.47492896,"data":"/benchmarks/.venv/lib/python3.12/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":2025.474980073,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":2025.503998108,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2026.815599209,"data":"/benchmarks/.venv/share/jupyter/nbconvert/templates/base/display_priority.j2:32: UserWarning: Your element with mimetype(s) dict_keys([]) is not able to be represented.\n"}
+,{"stream_name":"stderr","time":2026.815682203,"data":"  {%- elif type == 'text/vnd.mermaid' -%}\n"}
+,{"stream_name":"stderr","time":2027.206090886,"data":"[NbConvertApp] Writing 11655353 bytes to __results__.html\n"}
+]

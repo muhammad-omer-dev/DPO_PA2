@@ -1,0 +1,23 @@
+[
+  {
+    "id": "alpaca-eval-42-0000",
+    "instruction": "What factors would you consider when designing an inclusive and accessible public transportation system?",
+    "output": "1. Accessibility: The design of the public transportation system should be accessible to people with disabilities, including ramps, elevators, and tactile paving.\n\n2. Safety: The design of the public transportation system should be safe and prevent accidents, such as falling, tripping, or getting stuck in the wrong place.\n\n3. Convenience: The design of the public transportation system should be convenient for people with disabilities, such as providing wheelchair access, audio announcements, and accessible seating.\n\n4. Cost-effectiveness: The design of the public transportation system should be cost-effective, considering the cost of materials, labor, and maintenance.\n\n5. Flexibility: The design of the public transportation system should be flexible, allowing for changes in schedules, routes, and schedules to accommodate different needs.\n\n6. Accessibility for people with limited mobility: The design of the public transportation system should be accessible for people with limited mobility, such as providing wheelchair access, audio announcements, and accessible seating.\n\n7. Accessibility for people with hearing impairments: The design of the public transportation system should be accessible for people with hearing impairments, such as providing audio announcements and closed captioning.\n\n8. Accessibility for people with visual impairments: The design of the public transportation system should be accessible for people with visual impairments,",
+    "generator": "dpo_ultrafeedback",
+    "dataset": "alpaca_eval"
+  },
+  {
+    "id": "alpaca-eval-42-0001",
+    "instruction": "Is a thumb war violent?",
+    "output": "No, a thumb war is not violent. Thumb war is a type of physical conflict between two individuals or groups, often involving physical contact, verbal abuse, and emotional distress. Thumb war is a form of aggression and can lead to physical harm, injury, and emotional distress. It is not a violent act and should not be taken lightly.",
+    "generator": "dpo_ultrafeedback",
+    "dataset": "alpaca_eval"
+  },
+  {
+    "id": "alpaca-eval-42-0002",
+    "instruction": "Provide a pleasant compliment based on the quality you have been given.\n\nTruthfulness",
+    "output": "Dear [Name],\n\nI am thrilled to share that you have been receiving a wonderful compliment from [Complimenting Person]. Your honesty and integrity have always been a source of inspiration to me, and I am truly grateful for the opportunity to witness your positive impact on others.\n\nYour honesty and transparency have helped me to build trust and confidence in my own personal journey, and I am honored to have been a part of it. Your words have resonated with me on a deeper level, and I am grateful for the opportunity to share my own journey with you.\n\nThank you for your kind words, and I look forward to continuing our conversation and building a stronger connection with you.\n\nSincerely,\n\n[Your Name]",
+    "generator": "dpo_ultrafeedback",
+    "dataset": "alpaca_eval"
+  }
+]
