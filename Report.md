@@ -2,9 +2,9 @@
 
 **Final Assignment Report**
 
-**Repository:** https://github.com/muhammad-omer-dev/DPO_PA2
-**kaggle_training:** https://www.kaggle.com/code/muhammadomer1/training
-**kaggle_generation:** https://www.kaggle.com/code/muhammadomer1/generation
+**Repository:** https://github.com/muhammad-omer-dev/DPO_PA2  
+**kaggle_training:** https://www.kaggle.com/code/muhammadomer1/training  
+**kaggle_generation:** https://www.kaggle.com/code/muhammadomer1/generation  
 **kaggle_evaluation:** https://www.kaggle.com/code/muhammadomer1/pa2-pairwise-evaluation
 
 ## 1. What I tried to do
@@ -44,9 +44,9 @@ Here are the main settings I used in the notebook. The effective batch size is p
 
 All tracks used seed 42. The manual suggested small batches because Kaggle GPU memory is limited. I used gradient accumulation so each update still included several examples. I used two GPUs for the full DPO runs: the policy model on GPU 0 and the frozen reference on GPU 1. This helped fit both models in memory.
 
-One notable choice was RMSprop for my from-scratch DPO runs rather than AdamW. Both DPO runs used this setting, so the comparison between the two preference datasets is more consistent. I did not run a separate optimizer comparison, so I cannot say RMSprop was better. I also do not have a controlled experiment showing whether changing beta or batch size would improve the results.
+I used RMSprop for both DPO runs, while SFT used AdamW. I kept the DPO optimizer the same in both experiments so I could compare the datasets more fairly. I did not test other optimizers, so I cannot say which one would work best.
 
-For persona training, I used TRL `DPOTrainer` and LoRA instead of manually updating all model weights. This was a separate style task and used a different base model. The notebook sets three epochs, rank 8, alpha 16, and dropout 0.05. Scheduler, warmup, clipping, and weight decay for this track were not individually overridden, so they follow the installed TRL defaults rather than custom values claimed here.
+For the persona experiment, I used LoRA with TRL `DPOTrainer`. I chose this because I only needed to train a small adapter instead of changing all the model weights. This experiment used a different base model. The notebook sets three epochs, rank 8, alpha 16, and dropout 0.05. I left the other trainer settings at their defaults.
 
 ## 4. Evaluation settings
 
@@ -54,9 +54,9 @@ For generation, I used greedy decoding (`do_sample=False`), up to 256 new tokens
 
 ## 5. What happened during training
 
-The SFT run finished **938 optimizer updates**. Its final recorded validation loss was **1.3902**. There is only an end-of-epoch validation value in the saved log, so this is not enough to draw a full validation curve or prove there was no overfitting.
+The SFT run finished **938 optimizer updates**. Its final recorded validation loss was **1.3902**. I only saved one validation result at the end, so I cannot tell from this alone whether the model was overfitting.
 
-![Figure 1. SFT training loss](outputs/plots/sft_loss.png)
+![Figure 1. SFT training loss](outputs/plots//sft_loss.png)
 
 *Figure 1. SFT training loss from the saved notebook plot.*
 
@@ -67,21 +67,21 @@ Both DPO runs completed **469 updates**. I checked validation DPO loss, reward a
 | HH-RLHF | 0.6270 | 63.4% | 0.280 |
 | UltraFeedback | 0.5986 | 66.5% | 0.501 |
 
-UltraFeedback had the higher validation reward accuracy and margin, but that did not mean it would win the final response comparison. Training metrics only show that the model learned from its preference pairs. The final test checks actual answers.
+UltraFeedback got better scores on these training checks. But when I tested the answers, it did not perform better than SFT. This showed me that the training numbers do not tell the whole story.
 
-![Figure 2. HH-RLHF DPO training loss](outputs/plots/dpo_hh_loss.png)
+![Figure 2. HH-RLHF DPO training loss](outputs/plots//dpo_hh_loss.png)
 
 *Figure 2. HH-RLHF DPO training loss.*
 
-![Figure 3. HH-RLHF DPO preference diagnostics](outputs/plots/dpo_hh_preference.png)
+![Figure 3. HH-RLHF DPO preference diagnostics](outputs/plots//dpo_hh_preference.png)
 
 *Figure 3. HH-RLHF DPO preference diagnostics.*
 
-![Figure 4. UltraFeedback DPO training loss](outputs/plots/dpo_ultrafeedback_loss.png)
+![Figure 4. UltraFeedback DPO training loss](outputs/plots//dpo_ultrafeedback_loss.png)
 
 *Figure 4. UltraFeedback DPO training loss.*
 
-![Figure 5. UltraFeedback DPO preference diagnostics](outputs/plots/dpo_ultrafeedback_preference.png)
+![Figure 5. UltraFeedback DPO preference diagnostics](outputs/plots//dpo_ultrafeedback_preference.png)
 
 *Figure 5. UltraFeedback DPO preference diagnostics.*
 
@@ -95,13 +95,13 @@ The evaluation used pairwise judgments saved in the project. Each test compared 
 | HH-RLHF DPO vs SFT | 300 | 147 | 88 | 65 | 62.55% | 59.83% |
 | Persona LoRA vs base | 8 | 3 | 3 | 2 | 50.00% | 50.00% |
 
-The stored summary reports **zero unknown judgments and zero failures** in all three comparisons. The judge run metadata references **`google/gemini-3.6-flash`**. I cannot work out the number of retries actually attempted from the final summary alone.
+The saved summary shows **zero unknown judgments and zero failures** for all three tests. The judge metadata names **`google/gemini-3.6-flash`**. The summary does not show how many retries were made.
 
-**HH-RLHF:** This was the best result for DPO. It won 147 of the 235 non-tied comparisons and lost 88, a difference of 59 prompts. I think the safety and helpfulness preferences in this data helped the model make better decisions on the matching evaluation set.
+**HH-RLHF:** This gave me the strongest result. DPO won 147 times and lost 88 times when ties were left out. I think this dataset helped with safety and helpfulness questions, because those are the kinds of answers it was trained to prefer.
 
-**UltraFeedback:** Here DPO lost more often than it won: 111 wins against 128 losses, a difference of 17 prompts. So even though it learned the preferred examples in training, it did not beat the SFT baseline overall on this test. This may be due to the type of preference data, the limited training, or how the model generated its answers. These are possible explanations, not proven causes.
+**UltraFeedback:** This result surprised me. DPO won 111 times but lost 128 times, so SFT did a little better overall. The training scores looked good, but the generated answers did not improve enough. This could be because of the dataset, the short training run, or the way answers were generated. I did not test these reasons separately, so I cannot be sure.
 
-**Persona:** The results were tied at 3 wins and 3 losses, with 2 judge ties. With only 8 prompts, there is not enough evidence to say the adapter is reliably better. It also measures style, not the same kind of improvement as the other two evaluations.
+**Persona:** I got 3 wins, 3 losses and 2 ties. Since I tested only 8 prompts, I cannot say the adapter is better yet. This test was also about writing style, not the same task as the main DPO tests.
 
 ## 7. A closer look at the answers
 
@@ -109,24 +109,12 @@ The saved judge comments give some useful examples. On the first HH-RLHF evaluat
 
 The first UltraFeedback example was more mixed. The judge noted that both models repeated themselves and cut off their answers, although it slightly preferred the DPO response because its structure was better. This shows an important problem: DPO can improve one part of an answer without fixing repetition or other generation mistakes.
 
-## 8. Limitations and what I learned
+## 8. What I Learned
 
-This project was run with a small model and limited GPU resources, so the results do not tell us how a larger model would behave. I used one main seed and one final training recipe for each track. The evaluation also depends on a model judge, which can be inconsistent or prefer certain styles. There were only 300 comparisons per main track and just 8 for persona. Another limitation is that I used 256-token maximum generation, so some answers were cut short.
+The main thing I learned is that better training scores do not always mean better answers. HH-RLHF DPO performed better than SFT in my test, but UltraFeedback DPO did not. This showed me how much the training dataset matters.
 
-The checkpoints are large (around 2 GB each), and the repository snapshot contains the scripts, configurations, plots, and saved outputs rather than all the full model weights. This means the results can be inspected but loading every trained model requires the separately saved checkpoints. The files below contain the evidence used in this report.
-
-| Evidence | Repository path |
-|---|---|
-| Code and parameters | `training.ipynb`; `submission_adapter.py` |
-| Generation procedure | `generation.ipynb` |
-| Judging procedure | `pa2-pairwise-evaluation.ipynb` |
-| Loss / preference metrics | `outputs/sft/metrics.jsonl`; `outputs/dpo_hh/metrics.jsonl`; `outputs/dpo_ultrafeedback/metrics.jsonl` |
-| Training figures | `outputs/plots/` |
-| Evaluation summary | `pa2_evaluation/evaluation_summary.json` |
-| Individual judgments | `pa2_evaluation/*_judged.jsonl` |
-| Fixed evaluation prompts | `eval_sets/alpaca_eval_300_seed42.json`; `eval_sets/hh_rlhf_eval_300_seed42.json` |
-
-The main lesson for me was that lower training loss or higher reward accuracy does not always mean better final answers. HH-RLHF DPO helped compared with SFT on its evaluation set, but UltraFeedback DPO did not. The training data and the way results are tested both matter a lot. If I had more time, I would try more seeds, different beta values, and a larger evaluation sample. I would also inspect more answer pairs by hand before deciding which model is better.
+I also understood the difference between SFT, which learns from example answers, and DPO, which learns to prefer one answer over another. I learned how LoRA can fine-tune a model without updating all its weights. Finally, comparing answers using wins, losses, and ties taught me why evaluation matters and why I should also check some answers myself instead of relying only on an AI judge.
 
 ## Submission Files
-I have made all the notebooks public on github. Used AI for assistance
+
+I have made all the notebooks public on GitHub. I used AI tools for assistance with coding, debugging, and writing. I checked the results against the saved project outputs.
